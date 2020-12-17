@@ -421,6 +421,7 @@ section.projectContent {
 .project2 section.projectContent {
   width: 35%;
   margin-right: 5%;
+  margin-left: 0px;
 }
 
 .projects {
