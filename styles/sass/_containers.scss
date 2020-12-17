@@ -247,7 +247,11 @@ form label {
     .long {
         display: none;
     }
-    
+
+    section.contactForm .wrapper {
+        width: calc(80% - 60px);
+        margin: 30px 0px;
+    }
 }
 
 @media (max-width: 860px) {
