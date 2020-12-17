@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+header {
+    margin: 0;
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+// main
+
+main {
+    padding: 50px;
+    min-height: 100vh;
+}
+
+main .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//nav
+
+nav.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+}
+
+nav.scroll.visible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 120;
+}
+
+//about
+
+.about,
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+section.aboutHeading{
+    width: 20%;
+}
+
+//skills
+
+.skills {
+    flex-direction: column;
+}
+
+.list {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skills i {
+    display: inline-block;
+    vertical-align: center;
+    padding: 30px;
+    font-size: 5rem;
+    position: relative;
+    transition: .1s linear;
+}
+
+
+.type {
+    position: absolute;
+    width: 100px;
+    padding: 5px;
+    font-size: 1.2rem;
+    bottom: -15px;
+    left: calc(50% - 50px);
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    display: none;
+    transition: .1s linear;
+}
+
+.skills i:hover .type {
+    display: block;
+}
+
+//projects
+
+.project1,
+.project2,
+.project3 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.projectHeading {
+    width: 60%;
+}
+
+section.aboutHeading img,
+section.projectHeading img {
+    display: block;
+    width: 100%;
+    transition: linear .1s;
+}
+
+.invert {
+    filter: invert(1);
+    transition: linear .1s;
+}
+
+section.aboutContent {
+    width: 75%;
+    margin-left: 5%;
+}
+
+section.projectContent {
+    width: 35%;
+    margin-left: 5%;
+}
+
+.project2 section.projectContent {
+    width: 35%;
+    margin-right: 5%;
+}
+
+.projects {
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+//mockups
+
+.desktopWindow {
+    border: 1px solid;
+}
+
+//contact
+
+section.contactForm {
+    padding: 50px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contactForm .wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+form {
+    transition: linear .1s;
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 3rem;
+}
+
+form input,
+form textarea,
+form button {
+    background-color: #dcdcdc;
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    border: 0;
+    border-bottom: 1px solid;
+    font-family: 'Jomolhari', serif;
+    resize: vertical;
+}
+
+form label {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    display:block;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+}
+
+@media (max-width: 1300px) {
+    
+    .project1,
+    .project2 {
+        margin-bottom: 100px;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    main .wrapper {
+        flex-direction: column;
+    }
+
+    section.aboutHeading {
+        display: none;
+    }
+
+    section.projectHeading {
+        width: 80%;
+    }
+
+    section.aboutContent,
+    section.projectContent,
+    .project2 section.projectContent {
+        margin-left: 0px;
+        width: 80%;
+        margin: 30px 0px;
+        text-align: center;
+    }
+
+    .project2 section.projectContent {
+        order: 2;
+    }
+
+    .long {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 860px) {
+
+    section.aboutContent p {
+        text-align: center;
+    }
+
+    form {
+        font-size: 2rem;
+    }
+
+}
