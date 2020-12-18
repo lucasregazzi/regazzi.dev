@@ -5,7 +5,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    cursor: pointer;
 }
 
 header {
@@ -166,6 +165,10 @@ section.projectContent {
 
 //contact
 
+button[type=submit] {
+    cursor: pointer;
+}
+
 section.contactForm {
     padding: 50px;
     display: flex;
@@ -267,6 +270,18 @@ form label {
 
     form {
         font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    section.aboutContent p {
+        text-align: center;
+    }
+
+    form {
+        font-size: 1.5rem;
     }
 
 }
