@@ -13,7 +13,7 @@ regazziDev.prependHTMLOnDOM = () => {
     <main>
         <div class="wrapper about" id="About">
             <section class="aboutHeading">
-                <img src="./assets/waving.gif" alt="An illustration of me waving from my home office.">
+                <img src="./assets/sunnyWaveFinal.gif" alt="An illustration of me waving from my home office.">
             </section>
             <section class="aboutContent">
                 <p>Hey! Prior to becoming a developer I worked in the art world, in both commercial and non-profit sectors. When I'm not designing or creating on the web, I'm in my studio making paintings, drawings and poems. You can view that portfolio <a href="http://lucasregazzi.work" target="_blank" title="A link to my art portfolio.">here</a>.</p>
@@ -104,15 +104,20 @@ regazziDev.prependHTMLOnDOM = () => {
     $('#initialTab').focus();
 }
 
+
 regazziDev.stickyMenu = () => {
+    regazziDev.onWindowListen = () => {
+        window.addEventListener("resize", function() {
+            let horizontalScreenSize = window.innerWidth;
+            console.log(horizontalScreenSize);
+            return horizontalScreenSize;
+        });
+    }
     let positionAfterHeader = ($('#About').offset().top - 250);
     let positionAfterBio = ($('#Skills').offset().top - 250);
     let positionAfterSkills = ($('#Projects').offset().top - 250);
     let positionAfterProjects = ($('#Contact').offset().top - 250);
-    let horizontalScreenSize = window.innerWidth;
-    $(window).on('resize', function () {
-        horizontalScreenSize = window.innerWidth;
-    })
+    let horizontalScreenSize = regazziDev.onWindowListen();
     $(window).scroll(function () {
         if ($(window).scrollTop() > positionAfterHeader) {
             $('nav.scroll').addClass('visible');
@@ -121,10 +126,10 @@ regazziDev.stickyMenu = () => {
         }
     });
     if (horizontalScreenSize >= 801) {
-        positionAfterHeader = ($('#About').offset().top - 100);
-        positionAfterBio = ($('#Skills').offset().top - 100);
-        positionAfterSkills = ($('#Projects').offset().top - 100);
-        positionAfterProjects = ($('#Contact').offset().top - 100);
+        positionAfterHeader = ($('#About').offset().top);
+        positionAfterBio = ($('#Skills').offset().top);
+        positionAfterSkills = ($('#Projects').offset().top);
+        positionAfterProjects = ($('#Contact').offset().top);
             $(window).scroll(function () {
             if ($(window).scrollTop() > positionAfterHeader && $(window).scrollTop() < positionAfterBio) {
                 $('.skillsIHave').removeClass('emphasized');
