@@ -13,10 +13,10 @@ regazziDev.prependHTMLOnDOM = () => {
     <main>
         <div class="wrapper about" id="About">
             <section class="aboutHeading">
-                <img src="./assets/sunnyWaveFinal.gif" alt="An illustration of me waving from my home office.">
+                <img src="./assets/sunnyWaveFinal.gif" alt="An illustration of me waving from my home office." title="An actual picture of me waving to you from my home office.">
             </section>
             <section class="aboutContent">
-                <p>Hey! Prior to becoming a developer I worked in the art world, in both commercial and non-profit sectors. When I'm not designing or creating on the web, I'm in my studio making paintings, drawings and poems. You can view that portfolio <a href="http://lucasregazzi.work" target="_blank" title="A link to my art portfolio.">here</a>.</p>
+                <p>Hey! Lucas here. Prior to becoming a developer I worked in the art world, in both commercial and non-profit sectors. When I'm not designing or creating accessible, (hopefully) beautiful web-based interfaces, I'm in my studio, making paintings, drawings and poems. You can view that portfolio <a href="http://lucasregazzi.work" target="_blank" title="A link to my art portfolio.">here</a>.</p>
             </section>
         </div>
         <div class="wrapper skills" id="Skills">

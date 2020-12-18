@@ -717,6 +717,7 @@ main p {
 
 main p a {
   border-bottom: 1px solid;
+  cursor: pointer;
 }
 
 main h2 {
