@@ -2,7 +2,7 @@ const regazziDev = {};
 
 regazziDev.prependHTMLOnDOM = () => {
     $('body').prepend(`
-    <nav class="scroll"><div class="header"><a href="#Top" id="initialTab" tabindex="0"><span class="long">Back to the top </span><i class="fas fa-arrow-up"></i></a></div> <div class="aboutMe"><a href="#About" tabindex="0">About<span class="long"> Lucas</span></a></div> <div class="skillsIHave"><a href="#Skills" tabindex="0">Skills</a></div> <div class="recentProjects"><a href="#Projects" tabindex="0"><span class="long">Recent </span>Projects</a></div> <div class="contactMe"><a href="#Contact" tabindex="0">Contact</a></div></nav>
+    <nav class="scroll"><ul><li class="header"><a href="#Top" id="initialTab" tabindex="0"><span class="long">Back to the top </span><i class="fas fa-arrow-up"></i></a></li> <li class="aboutMe"><a href="#About" tabindex="0">About<span class="long"> Lucas</span></a></li> <li class="skillsIHave"><a href="#Skills" tabindex="0">Skills</a></li> <li class="recentProjects"><a href="#Projects" tabindex="0"><span class="long">Recent </span>Projects</a></li> <li class="contactMe"><a href="#Contact" tabindex="0">Contact</a></li><ul></nav>
         <header id="Top">
         <div class="wrapper">
             <h1>
@@ -16,7 +16,7 @@ regazziDev.prependHTMLOnDOM = () => {
                 <img src="./assets/sunnyWaveFinal.gif" alt="An illustration of me waving from my home office." title="An actual picture of me waving to you from my home office.">
             </section>
             <section class="aboutContent">
-                <p>Hey! Lucas here. Prior to becoming a developer I worked in the art world, in both commercial and non-profit sectors. When I'm not designing or creating accessible, (hopefully) beautiful web-based interfaces, I'm in my studio, making paintings, drawings and poems. You can view that portfolio <a href="http://lucasregazzi.work" target="_blank" title="A link to my art portfolio.">here</a>.</p>
+                <p>Hey! Lucas here. Prior to becoming a developer I worked in the art world, in both commercial and non-profit sectors. When I'm not designing and creating accessible, beautiful web-based interfaces, I'm in my studio, making paintings, drawings and poems. You can view that portfolio of work <a href="http://lucasregazzi.work" target="_blank" title="A link to my art portfolio.">here</a>.</p>
             </section>
         </div>
         <div class="wrapper skills" id="Skills">
@@ -104,80 +104,45 @@ regazziDev.prependHTMLOnDOM = () => {
     $('#initialTab').focus();
 }
 
+regazziDev.checkPositions = () => {
+    regazziDev.positionAfterHeader = ($('#About').offset().top - 100);
+    regazziDev.positionAfterBio = ($('#Skills').offset().top - 200);
+    regazziDev.positionAfterSkills = ($('#Projects').offset().top - 250);
+    regazziDev.positionAfterProjects = ($('#Contact').offset().top - 250);
+}
+
+regazziDev.setEmphasis = (about, skills, projects, contact) => {
+    regazziDev.setEmphasisItem(about, '.aboutMe');
+    regazziDev.setEmphasisItem(skills, '.skillsIHave');
+    regazziDev.setEmphasisItem(projects, '.recentProjects');
+    regazziDev.setEmphasisItem(contact, '.contactMe');
+}
+
+regazziDev.setEmphasisItem = (flag, item) => {
+    if (flag) $(item).addClass('emphasized');
+    else $(item).removeClass('emphasized');
+}
 
 regazziDev.stickyMenu = () => {
-    regazziDev.onWindowListen = () => {
-        window.addEventListener("resize", function() {
-            let horizontalScreenSize = window.innerWidth;
-            console.log(horizontalScreenSize);
-            return horizontalScreenSize;
-        });
-    }
-    let positionAfterHeader = ($('#About').offset().top - 250);
-    let positionAfterBio = ($('#Skills').offset().top - 250);
-    let positionAfterSkills = ($('#Projects').offset().top - 250);
-    let positionAfterProjects = ($('#Contact').offset().top - 250);
-    let horizontalScreenSize = regazziDev.onWindowListen();
     $(window).scroll(function () {
-        if ($(window).scrollTop() > positionAfterHeader) {
+        regazziDev.checkPositions();
+        //window scroll is evaluated to trigger the visibility of the nav menu
+        if ($(window).scrollTop() > regazziDev.positionAfterHeader) {
             $('nav.scroll').addClass('visible');
-        } else if ($(window).scrollTop() < positionAfterHeader && $('nav.scroll').hasClass('visible')) {
+        } else if ($(window).scrollTop() < regazziDev.positionAfterHeader && $('nav.scroll').hasClass('visible')) {
             $('nav.scroll').removeClass('visible');
         }
-    });
-    if (horizontalScreenSize >= 801) {
-        positionAfterHeader = ($('#About').offset().top);
-        positionAfterBio = ($('#Skills').offset().top);
-        positionAfterSkills = ($('#Projects').offset().top);
-        positionAfterProjects = ($('#Contact').offset().top);
-            $(window).scroll(function () {
-            if ($(window).scrollTop() > positionAfterHeader && $(window).scrollTop() < positionAfterBio) {
-                $('.skillsIHave').removeClass('emphasized');
-                $('.recentProjects').removeClass('emphasized');
-                $('.contactMe').removeClass('emphasized');
-                $('.aboutMe').addClass('emphasized');
-            } else if ($(window).scrollTop() > positionAfterBio && $(window).scrollTop() < positionAfterSkills) {
-                $('.aboutMe').removeClass('emphasized');
-                $('.recentProjects').removeClass('emphasized');
-                $('.contactMe').removeClass('emphasized');
-                $('.skillsIHave').addClass('emphasized');
-            } else if ($(window).scrollTop() > positionAfterSkills && $(window).scrollTop() < positionAfterProjects) {
-                $('.aboutMe').removeClass('emphasized');
-                $('.skillsIHave').removeClass('emphasized');
-                $('.contactMe').removeClass('emphasized');
-                $('.recentProjects').addClass('emphasized');
-            } else if ($(window).scrollTop() > positionAfterProjects) {
-                $('.aboutMe').removeClass('emphasized');
-                $('.skillsIHave').removeClass('emphasized');
-                $('.recentProjects').removeClass('emphasized');
-                $('.contactMe').addClass('emphasized');
-            }
-        })
-    } else {
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > positionAfterHeader && $(window).scrollTop() < positionAfterBio) {
-                $('.skillsIHave').removeClass('emphasized');
-                $('.recentProjects').removeClass('emphasized');
-                $('.contactMe').removeClass('emphasized');
-                $('.aboutMe').addClass('emphasized');
-            } else if ($(window).scrollTop() > positionAfterBio && $(window).scrollTop() < positionAfterSkills) {
-                $('.aboutMe').removeClass('emphasized');
-                $('.recentProjects').removeClass('emphasized');
-                $('.contactMe').removeClass('emphasized');
-                $('.skillsIHave').addClass('emphasized');
-            } else if ($(window).scrollTop() > positionAfterSkills && $(window).scrollTop() < positionAfterProjects) {
-                $('.aboutMe').removeClass('emphasized');
-                $('.skillsIHave').removeClass('emphasized');
-                $('.contactMe').removeClass('emphasized');
-                $('.recentProjects').addClass('emphasized');
-            } else if ($(window).scrollTop() > positionAfterProjects) {
-                $('.aboutMe').removeClass('emphasized');
-                $('.skillsIHave').removeClass('emphasized');
-                $('.recentProjects').removeClass('emphasized');
-                $('.contactMe').addClass('emphasized');
-            }
-        })
-    }
+        //once visible, this window scroll evaluates where exactly the user is on the page to emphasize the correct heading for each section
+        if ($(window).scrollTop() > regazziDev.positionAfterHeader && $(window).scrollTop() < regazziDev.positionAfterBio) {
+            regazziDev.setEmphasis(true, false, false, false);
+        } else if ($(window).scrollTop() > regazziDev.positionAfterBio && $(window).scrollTop() < regazziDev.positionAfterSkills) {
+            regazziDev.setEmphasis(false, true, false, false);
+        } else if ($(window).scrollTop() > regazziDev.positionAfterSkills && $(window).scrollTop() < regazziDev.positionAfterProjects) {
+            regazziDev.setEmphasis(false, false, true, false);
+        } else if ($(window).scrollTop() > regazziDev.positionAfterProjects) {
+            regazziDev.setEmphasis(false, false, false, true);
+        }
+    })
 }
 
 regazziDev.backgroundChangeOnHover = () => {

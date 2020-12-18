@@ -302,6 +302,11 @@ nav.scroll {
 }
 
 nav.scroll.visible {
+  display: block;
+  z-index: 120;
+}
+
+nav.scroll.visible ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,7 +315,8 @@ nav.scroll.visible {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 120;
+  padding: 0;
+  margin: 0;
 }
 
 .about,
@@ -557,7 +563,8 @@ a {
   text-decoration: none;
 }
 
-nav.scroll div {
+nav.scroll li {
+  list-style-type: none;
   padding: 50px;
   font-family: 'Manrope', sans-serif;
   text-transform: uppercase;

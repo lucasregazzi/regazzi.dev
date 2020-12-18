@@ -5,7 +5,8 @@ a {
 
 //nav
 
-nav.scroll div {
+nav.scroll li {
+    list-style-type: none;
     padding: 50px;
     font-family: 'Manrope', sans-serif;
     text-transform: uppercase;
