@@ -26,7 +26,7 @@ regazziDev.prependHTMLOnDOM = () => {
                 <div class="toSenseHisVibe">to experience his mission in action,</div>
                 <div class="ya">otherwise</div>
                 <div class="please">feel free to</div>
-                <div class="peruseCV"><span class="restyle">peruse</span> his <a href="" target="_blank" title="Clicking this navigates to an externally hosted C.V. .pdf document">C.V.</a> or</div>
+                <div class="peruseCV"><span class="restyle">peruse</span> his <a href="https://drive.google.com/file/d/1yungmOtzML77saO9fva-XzP-61-axfyZ/view" target="_blank" title="Clicking this navigates to an externally hosted C.V. .pdf document">C.V.</a> or</div>
                 <div class="emailHim"><a href="#Contact" title="Clicking this navigates to the contact form on this webpage.">drop him a line</a>.</div>
             </h1>
         </div>
