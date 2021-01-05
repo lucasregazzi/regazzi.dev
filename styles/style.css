@@ -355,7 +355,7 @@ section.aboutHeading {
   display: inline-block;
   vertical-align: center;
   padding: 30px;
-  font-size: 5rem;
+  font-size: 4rem;
   position: relative;
   -webkit-transition: .1s linear;
   transition: .1s linear;
@@ -645,8 +645,8 @@ body {
 header h1 {
   margin: 0;
   padding: 0;
-  font-size: 4rem;
-  line-height: 8rem;
+  font-size: 3.2rem;
+  line-height: 7.2rem;
   text-align: center;
   font-weight: normal;
 }
@@ -670,6 +670,7 @@ header h1 {
 .toSenseHisVibe,
 .ya,
 .please,
+.peruseCV,
 .emailHim {
   display: inline-block;
   padding: 5px;
@@ -691,13 +692,14 @@ header h1 {
 
 .basedInBrooklyn,
 .ifYoureCurious,
-.emailHim {
+.peruseCV {
   -webkit-transform: rotate(1deg);
           transform: rotate(1deg);
 }
 
 .hePrograms,
-.viewHisProjects {
+.viewHisProjects,
+.emailHim {
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
 }
@@ -712,6 +714,37 @@ h1 a,
 .emphatic {
   border-bottom: 3px solid;
   padding-bottom: 2px;
+}
+
+@media (max-width: 800px) {
+  .hePrograms,
+  .websites,
+  .forArtsSake,
+  .throughScreens {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .hePrograms,
+  .websites,
+  .forArtsSake,
+  .throughScreens {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .ifYoureCurious,
+  .viewHisProjects,
+  .toSenseHisVibe,
+  .ya,
+  .please {
+    display: none;
+  }
+  .restyle {
+    text-transform: capitalize;
+  }
 }
 
 main h2,
