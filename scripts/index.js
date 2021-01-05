@@ -73,6 +73,9 @@ regazziDev.prependHTMLOnDOM = () => {
                     <i class="fi fi-npm" title="This is the logo for npm.">
                         <div class="type">npm</div>
                     </i>
+                    <i class="fi fi-github" title="This is the logo for Github.">
+                        <div class="type">Github</div>
+                    </i>
                 </div>
             </div>
         </div>
