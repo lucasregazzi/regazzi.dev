@@ -469,6 +469,7 @@ form {
   width: 100%;
   border: 1px solid #000;
   font-size: 3rem;
+  position: relative;
 }
 
 form input,
@@ -788,4 +789,42 @@ section.projectContent p:first-of-type {
     font-size: 2rem;
     line-height: 4rem;
   }
+}
+
+.contactOtherwise,
+.copyright {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  position: absolute;
+  bottom: -100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contactOtherwise {
+  -webkit-transform: rotate(0.5deg);
+          transform: rotate(0.5deg);
+  left: 0;
+}
+
+.copyright {
+  -webkit-transform: rotate(-0.3deg);
+          transform: rotate(-0.3deg);
+  right: 0;
+}
+
+@media (max-width: 1199px) {
+  .copyright {
+    display: none;
+  }
+}
+
+.contactOtherwise a {
+  text-decoration: underline;
+}
+
+.contactOtherwise a:hover,
+.contactOtherwise a:focus {
+  text-decoration: none;
 }

@@ -231,3 +231,43 @@ section.projectContent p:first-of-type {
     }
 
 }
+
+//contact
+
+.contactOtherwise,
+.copyright {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    position: absolute;
+    bottom: -100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contactOtherwise {
+    transform: rotate(.5deg);
+    left: 0;
+}
+
+.copyright {
+    transform: rotate(-.3deg);
+    right: 0;
+}
+
+@media (max-width: 1199px) {
+    
+    .copyright {
+        display: none;
+    }
+
+}
+
+.contactOtherwise a {
+    text-decoration: underline;
+}
+
+.contactOtherwise a:hover,
+.contactOtherwise a:focus {
+    text-decoration: none;
+}
