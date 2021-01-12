@@ -15,7 +15,7 @@ regazziDev.prependHTMLOnDOM = () => {
         <div class="wrapper">
             <h1>
                 <div class="Lucas"><a href="#About" title="Clicking this navigates to the about section of this webpage.">Lucas Regazzi</a></div>
-                <div class="isAnArtistCoder">is a web developer</div>
+                <div class="isAnArtistCoder">is a designer & developer</div>
                 <div class="basedInBrooklyn">currently based in Toronto, Canada.</div>
                 <div class="hePrograms">His programmatic</div>
                 <div class="websites"><a href="#Skills" title="Clicking this navigates to the skills section of this webpage.">work</a></div>
