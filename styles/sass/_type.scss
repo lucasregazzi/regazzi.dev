@@ -103,10 +103,10 @@ header h1 {
 
 .Lucas,
 .isAnArtistCoder,
-.basedInBrooklyn,
-.hePrograms,
-.websites,
-.forArtsSake,
+.basedInToronto,
+.heDesigns,
+.products,
+.forBeauty,
 .throughScreens,
 .ifYoureCurious,
 .viewHisProjects,
@@ -120,7 +120,7 @@ header h1 {
 }
 
 .Lucas,
-.forArtsSake,
+.forBeauty,
 .ya {
     transform: rotate(3deg);
 }
@@ -131,19 +131,19 @@ header h1 {
     transform: rotate(-1deg);
 }
 
-.basedInBrooklyn,
+.basedInToronto,
 .ifYoureCurious,
 .peruseCV {
     transform: rotate(1deg);
 }
 
-.hePrograms,
+.heDesigns,
 .viewHisProjects,
 .emailHim {
     transform: rotate(-3deg);
 }
 
-.websites,
+.products,
 .toSenseHisVibe {
     transform: rotate(-2deg);
 }
@@ -155,18 +155,18 @@ h1 a,
 }
 
 @media (max-width: 800px) {
-    .hePrograms,
-    .websites,
-    .forArtsSake,
+    .heDesigns,
+    .products,
+    .forBeauty,
     .throughScreens {
         display: none;
     }
 }
 
 @media (max-width: 800px) {
-    .hePrograms,
-    .websites,
-    .forArtsSake,
+    .heDesigns,
+    .products,
+    .forBeauty,
     .throughScreens {
         display: none;
     }

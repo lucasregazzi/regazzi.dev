@@ -15,12 +15,12 @@ regazziDev.prependHTMLOnDOM = () => {
         <div class="wrapper">
             <h1>
                 <div class="Lucas"><a href="#About" title="Clicking this navigates to the about section of this webpage.">Lucas Regazzi</a></div>
-                <div class="isAnArtistCoder">is a designer & developer</div>
-                <div class="basedInBrooklyn">currently based in Toronto, Canada.</div>
-                <div class="hePrograms">His programmatic</div>
-                <div class="websites"><a href="#Skills" title="Clicking this navigates to the skills section of this webpage.">work</a></div>
-                <div class="forArtsSake"><span class="emphatic">expands</span> the <span class="emphatic">accessibility of art</span></div>
-                <div class="throughScreens">through <span class="emphatic">digital means</span>.</div>
+                <div class="isAnArtistCoder">is a <a href="http://regazzi.design" target="_blank" title="Clicking this leads to my external UX Design portfolio.">designer</a> & developer</div>
+                <div class="basedInToronto">currently based in Toronto, Canada.</div>
+                <div class="heDesigns">His UX</div>
+                <div class="products"><a href="#Skills" title="Clicking this navigates to the skills section of this webpage.">work</a></div>
+                <div class="forBeauty">expands meaningful engagement with the material world</div>
+                <div class="throughScreens"><span class="emphatic">through digital means</span>.</div>
                 <div class="ifYoureCurious">Navigate to</div>
                 <div class="viewHisProjects"><a href="#Projects" title="Clicking this navigates to the projects section of this webpage.">recent projects</a></div>
                 <div class="toSenseHisVibe">to experience his mission in action,</div>
@@ -37,7 +37,7 @@ regazziDev.prependHTMLOnDOM = () => {
                 <img src="./assets/sunnyWaveFinal.gif" alt="An illustration of me waving from my home office." title="An actual picture of me waving to you from my home office.">
             </section>
             <section class="aboutContent">
-                <p>Hey! Lucas here. Prior to becoming a developer I worked in the art world, in both commercial and non-profit sectors. When I'm not designing and creating accessible, beautiful web-based interfaces, I'm in my studio, making paintings, drawings and poems. You can view that portfolio of work <a href="http://lucasregazzi.work" target="_blank" title="Clicking this navigates to my distinctive art portfolio.">here</a>.</p>
+                <p>Hey! Lucas here. Prior to entering the tech field I worked in the art world, in both commercial and non-profit sectors. When I'm not designing and creating accessible, beautiful web-based interfaces, I'm in my studio, making paintings, drawings and poems. You can view that portfolio of work <a href="http://lucasregazzi.work" target="_blank" title="Clicking this navigates to my distinctive art portfolio.">here</a>.</p>
             </section>
         </div>
         <div class="wrapper skills" id="Skills">
@@ -48,6 +48,15 @@ regazziDev.prependHTMLOnDOM = () => {
                     </i>
                     <i class="fi fi-mobile-alt" title="This icon represents mobile/desktop web design responsiveness.">
                         <div class="type">Responsive Design</div>
+                    </i>
+                    <i class="fab fa-figma" title="This is the logo for Figma.">
+                        <div class="type">Figma</div>
+                    </i>
+                    <i class="devicon-photoshop-plain" title="This is the logo for Adobe Photoshop.">
+                        <div class="type">Photoshop</div>
+                    </i>
+                    <i class="devicon-illustrator-plain" title="This is the logo for Adobe Illustrator.">
+                        <div class="type">Illustrator</div>
                     </i>
                     <i class="fi fi-html5" title="This is the logo for HTML 5.">
                         <div class="type">HTML 5</div>
