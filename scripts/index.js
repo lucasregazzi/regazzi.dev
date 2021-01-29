@@ -215,7 +215,7 @@ regazziDev.linkInNewTabAccessibility = () => {
 
     function addNewTabMessage(link) {
         if (!link.querySelector('.screen-reader-only')) {
-            link.insertAdjacentHTML('beforeend', '<span class="screen-reader-only">(opens in a new tab)</span>');
+            link.insertAdjacentHTML('beforeend', '<span class="srOnly">(opens in a new tab)</span>');
         }
     }
 
