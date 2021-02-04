@@ -52,6 +52,9 @@ regazziDev.prependHTMLOnDOM = () => {
                     <i class="fab fa-figma" title="This is the logo for Figma.">
                         <div class="type">Figma</div>
                     </i>
+                    <i class="devicon-xd-plain" title="This is the logo for Adobe XD.">
+                        <div class="type">Adobe XD</div>
+                    </i>
                     <i class="devicon-photoshop-plain" title="This is the logo for Adobe Photoshop.">
                         <div class="type">Photoshop</div>
                     </i>
