@@ -154,7 +154,7 @@ regazziDev.prependHTMLOnDOM = () => {
                     id="message"></textarea>
                 <button type="submit">Send</button>
                 <div class="contactOtherwise">
-                    <p>Otherwise, email me at <a href="mailto:hello@regazzi.dev" title="Clicking this will open your mail app to write me.">hello@regazzi.dev</a>, or find me on <a href="https://twitter.com/regazzidev" target="_blank" title="Clicking this navigates to my Twitter profile.">Twitter</a>, <a href="https://www.linkedin.com/in/lucasregazzi/" target="_blank" title="Clicking this navigates to my LinkedIn profile.">LinkedIn</a> and <a href="https://github.com/lucasregazzi" target="_blank" title="Clicking this navigates to my Github profile.">Github</a>.
+                    <p>Otherwise, email me at <a href="mailto:hello@regazzi.dev" title="Clicking this will open your mail app to write me.">hello@regazzi.dev</a>, or find me on <a href="https://twitter.com/regazziUX" target="_blank" title="Clicking this navigates to my Twitter profile.">Twitter</a>, <a href="https://www.linkedin.com/in/lucasregazzi/" target="_blank" title="Clicking this navigates to my LinkedIn profile.">LinkedIn</a> and <a href="https://github.com/lucasregazzi" target="_blank" title="Clicking this navigates to my Github profile.">Github</a>.
                 </div>
                 <div class="copyright">
                     <p>2021 © Lucas Regazzi</p>
