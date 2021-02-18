@@ -15,14 +15,14 @@ regazziDev.prependHTMLOnDOM = () => {
         <div class="wrapper">
             <h1>
                 <div class="Lucas"><a href="#About" title="Clicking this navigates to the about section of this webpage.">Lucas Regazzi</a></div>
-                <div class="isAnArtistCoder">is a <a href="http://regazzi.design" target="_blank" title="Clicking this leads to my external UX Design portfolio.">designer</a> & developer</div>
+                <div class="isAnArtistCoder">is a <a href="http://plates.studio" target="_blank" title="Clicking this leads to my external UX Design portfolio.">full-stack designer</a></div>
                 <div class="basedInToronto">currently based in Toronto, Canada.</div>
                 <div class="heDesigns">His </div>
                 <div class="products"><a href="#Skills" title="Clicking this navigates to the skills section of this webpage.">work</a> expands meaningful</div>
                 <div class="forBeauty">engagement with the material world</div>
                 <div class="throughScreens"><span class="emphatic">through digital means</span>.</div>
                 <div class="ifYoureCurious">Navigate to</div>
-                <div class="viewHisProjects"><a href="#Projects" title="Clicking this navigates to the projects section of this webpage.">recent projects</a></div>
+                <div class="viewHisProjects"><a href="#Projects" title="Clicking this navigates to the projects section of this webpage.">recent dev projects</a></div>
                 <div class="toSenseHisVibe">to experience his mission in action,</div>
                 <div class="ya">otherwise</div>
                 <div class="please">feel free to</div>
@@ -154,7 +154,7 @@ regazziDev.prependHTMLOnDOM = () => {
                     id="message"></textarea>
                 <button type="submit">Send</button>
                 <div class="contactOtherwise">
-                    <p>Otherwise, email me at <a href="mailto:hello@regazzi.dev" title="Clicking this will open your mail app to write me.">hello@regazzi.dev</a>, or find me on <a href="https://twitter.com/regazziUX" target="_blank" title="Clicking this navigates to my Twitter profile.">Twitter</a>, <a href="https://www.linkedin.com/in/lucasregazzi/" target="_blank" title="Clicking this navigates to my LinkedIn profile.">LinkedIn</a> and <a href="https://github.com/lucasregazzi" target="_blank" title="Clicking this navigates to my Github profile.">Github</a>.
+                    <p>Otherwise, email me at <a href="mailto:hello@regazzi.dev" title="Clicking this will open your mail app to write me.">hello@regazzi.dev</a>, or find me on <a href="https://twitter.com/regazzilucas" target="_blank" title="Clicking this navigates to my Twitter profile.">Twitter</a>, <a href="https://www.linkedin.com/in/lucasregazzi/" target="_blank" title="Clicking this navigates to my LinkedIn profile.">LinkedIn</a> and <a href="https://github.com/lucasregazzi" target="_blank" title="Clicking this navigates to my Github profile.">Github</a>.
                 </div>
                 <div class="copyright">
                     <p>2021 © Lucas Regazzi</p>
